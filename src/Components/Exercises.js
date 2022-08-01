@@ -15,12 +15,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   // Pagination
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercise = exercises.slice(
-    indexOfFirstExercise,
-    indexOfLastExercise
-  );
+  const currentExercise = exercises.slice(indexOfFirstExercise,indexOfLastExercise);
 
-  const paginate = ( e, value) => {
+  const paginate = (event, value) => {
     //paginate function get the parameter (event,value) from the function of material ui pass in paginate
     setCurrentPage(value);
 
@@ -38,7 +35,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       setExercises(exerciseData)
     }
     fetchExerciseData()
-  }, )
+  }, [bodyPart])
 
 
   return (
