@@ -5,7 +5,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 
-// and exercisesOption fetchData are import from the fetchdata component for get the exercises
+// and exercisesOption fetchData are import from the fetchData component for get the exercises
 // we access the exercises setExercises and bodyPart from the home component
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
@@ -32,10 +32,10 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       } else {
         exerciseData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions)
       }
-      setExercises(exerciseData)
+      setExercises(exerciseData);
     }
     fetchExerciseData()
-  }, [bodyPart])
+  }, )
 
 
   return (
