@@ -7,8 +7,8 @@ export const exerciseOptions = {
   }
 }
 
-//we have a fetchdata function which export to searchExercise 
-// and fetchdata get url and option from Search Exercise where url and exerciseOption pass as a parameter.
+//we have a fetchData function which export to searchExercise 
+// and fetchData get url and option from Search Exercise where url and exerciseOption pass as a parameter.
 export const fetchData = async (url, options) => {
   const response = await fetch(url, options);
   const data = await response.json();
