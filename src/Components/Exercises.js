@@ -20,7 +20,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     indexOfLastExercise
   );
 
-  const paginate = (event, value) => {
+  const paginate = ( e, value) => {
     //paginate function get the parameter (event,value) from the function of material ui pass in paginate
     setCurrentPage(value);
 
