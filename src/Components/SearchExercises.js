@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 
 import { exerciseOptions, fetchData } from '../utils/fetchData';
-import HorizontalScrollbar from './HorizontalScrollBar';
+import HorizontalScrollBar from './HorizontalScrollBar';
 
 //get the props from the home component.
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
@@ -60,8 +60,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </Button>
       </Box>
       <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-        {/* here is a horizontalScollBar called...in this scrollbar we pass props from this component to the horizontalScrollBar */}
-        <HorizontalScrollbar data={bodyParts} bodyParts setBodyPart={setBodyPart} bodyPart={bodyPart} />
+        {/* here is a horizontalScollBar called...in this scrollBar we pass props from this component to the HorizontalScrollBar */}
+        <HorizontalScrollBar data={bodyParts} bodyParts setBodyPart={setBodyPart} bodyPart={bodyPart} />
       </Box>
     </Stack>
   );

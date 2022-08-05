@@ -31,7 +31,7 @@ const RightArrow = () => {
   );
 };
 
-const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
+const HorizontalScrollBar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
   //take the props from searchingExercise component...
   <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {/*  we iterate the all exercise with the help of data  */}
@@ -50,4 +50,4 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
   </ScrollMenu>
 );
 
-export default HorizontalScrollbar;
+export default HorizontalScrollBar;
