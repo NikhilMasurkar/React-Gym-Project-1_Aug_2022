@@ -28,9 +28,9 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       const searchedExercises = exercisesData.filter(
         // here we can pass the parameter as a item... and in exercisesData we filter the searching according to the itemName,ItemTargetMuscle,itemEquipment,itemBodyPart. 
         (item) => item.name.toLowerCase().includes(search)
-               || item.target.toLowerCase().includes(search)
-               || item.equipment.toLowerCase().includes(search)
-               || item.bodyPart.toLowerCase().includes(search),
+          || item.target.toLowerCase().includes(search)
+          || item.equipment.toLowerCase().includes(search)
+          || item.bodyPart.toLowerCase().includes(search),
       );
 
       //this is for when click the search button press then it will go the 
