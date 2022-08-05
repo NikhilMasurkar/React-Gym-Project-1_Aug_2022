@@ -18,7 +18,7 @@ const Home = () => {
       {/* pass the props to  searchExercises and Exercises */}
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
       <Exercises setExercises={setExercises} bodyPart={bodyPart} exercises={exercises} />
-      
+
     </Box>
   );
 };

@@ -14,7 +14,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];
-            //if we click all then it will show us all exercises otherwise it will show according to the bodyPart after clicking to the bodypart
+      //if we click all then it will show us all exercises otherwise it will show according to the bodyPart after clicking to the bodypart
       if (bodyPart === 'all') {
         exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
       } else {
@@ -37,7 +37,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
     window.scrollTo({ top: 1800, behavior: 'smooth' });
   };
-//if data take time time to fetch the loader will appear.
+  //if data take time time to fetch the loader will appear.
   if (!currentExercises.length) return <Loader />;
 
   return (
