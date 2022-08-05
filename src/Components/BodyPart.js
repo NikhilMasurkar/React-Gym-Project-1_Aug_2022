@@ -3,6 +3,7 @@ import { Stack, Typography } from '@mui/material';
 import Icon from '../assets/icons/gym.png';
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => (
+  // take props from the horizontalScrollBar component where data setBodyPart contains all fetch bodyPartData and individual bodyPart 
   <Stack
     type="button"
     alignItems="center"
@@ -19,4 +20,4 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
   </Stack>
 );
 
-export default BodyPart; 
+export default BodyPart;

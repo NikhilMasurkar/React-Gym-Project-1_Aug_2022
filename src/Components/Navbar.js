@@ -11,10 +11,7 @@ const Navbar = () => {
           src={Logo}
           alt="Logo"
           style={{ width: "48px", height: "48px", margin: "0 20px" }}
-
         />
-
-        <h4 className="logoName">NikFitness</h4>
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px " alignItems="flex-end" ml="153px">
         <Link

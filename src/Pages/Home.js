@@ -10,6 +10,7 @@ const Home = () => {
 
   const [bodyPart, setBodyPart] = useState('all');
   const [exercises, setExercises] = useState([]);
+  //after receiving the all bodyParts in exrcises  data now we pass into exercises component 
 
   return (
     <Box>
@@ -17,6 +18,7 @@ const Home = () => {
       {/* pass the props to  searchExercises and Exercises */}
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
       <Exercises setExercises={setExercises} bodyPart={bodyPart} exercises={exercises} />
+      
     </Box>
   );
 };
