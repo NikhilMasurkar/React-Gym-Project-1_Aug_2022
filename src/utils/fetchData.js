@@ -12,7 +12,7 @@ export const youtubeOptions = {
   url: 'https://youtube-search-and-download.p.rapidapi.com/video/related',
 
   headers: {
-    'X-RapidAPI-Key': 'c3f8e483f8msh9ae6e18f9a2dda4p12a502jsnf57c6a9b073d',
+    // 'X-RapidAPI-Key': 'c3f8e483f8msh9ae6e18f9a2dda4p12a502jsnf57c6a9b073d',
     'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
   }
 };
